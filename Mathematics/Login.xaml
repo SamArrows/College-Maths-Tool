@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Mathematics.Login">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Either enter your username and date of birth in the required fields or just your UserID in the username field, with your password to log in. If creating a new login, enter a username and desired password and your unique UserID will be shown. Click login to log in with this new account."
+                VerticalOptions="StartAndExpand" 
+                HorizontalOptions="CenterAndExpand"
+                Margin="10"/>
+            <Label x:Name="lblStatus"
+                   VerticalOptions="StartAndExpand"
+                   HorizontalOptions="CenterAndExpand"
+                   Text="Login information and status updates" />
+            <Entry Placeholder="Username"
+                   VerticalOptions="StartAndExpand" 
+                   x:Name="txtUser"/>
+            <Entry Placeholder="Date of birth (YYYY/DD/MM, e.g. 20041904)"
+                   VerticalOptions="StartAndExpand" 
+                   x:Name="txtDoB"/>
+            <Entry Placeholder="Password"
+                   VerticalOptions="StartAndExpand" 
+                   x:Name="txtPass"/>
+            <Button Text="Log in"
+                    x:Name="btnLogIn"
+                    VerticalOptions="StartAndExpand" 
+                    BackgroundColor="OrangeRed"
+                    Clicked="BtnLogIn_Clicked"/>
+            <Button Text="Create new account" 
+                    VerticalOptions="StartAndExpand" 
+                    BackgroundColor="Aqua"
+                    Clicked="BtnNewAcc_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

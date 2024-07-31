@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             Title="Angles in Regular Polygons"
+             x:Class="Mathematics.Angles">
+    <ContentPage.Content>
+        <StackLayout>
+            <Button
+                Margin="30"
+                Clicked="BtnHome_Clicked"
+                VerticalOptions="StartAndExpand"
+                Text="Return to Menu"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100" />
+                    <ColumnDefinition Width="100" />
+                    <ColumnDefinition Width="100" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="80" />
+                    <RowDefinition Height="80" />
+                </Grid.RowDefinitions>
+                <Label 
+                    FontSize="Large"
+                    VerticalOptions="CenterAndExpand"
+                    Margin ="10"
+                    Text="No. of Sides:" 
+                    Grid.Column="0"
+                    Grid.Row="0"/>
+                <Entry
+                    VerticalOptions="CenterAndExpand"
+                    x:Name="txtSides"
+                    Keyboard="Numeric"
+                    MaxLength="15"
+                    Grid.Column="1"
+                    Grid.Row="0"/>
+                <Label 
+                    x:Name="txtState"
+                    FontSize="Large"
+                    VerticalOptions="CenterAndExpand"
+                    Margin ="10" 
+                    Grid.Column="0"
+                    Grid.Row="1"/>
+                <Button
+                    Clicked="BtnINT_Clicked"
+                    Text="INT"
+                    Margin="10"
+                    BackgroundColor="#66aabb"
+                    HorizontalOptions="StartAndExpand"
+                    Grid.Column="1"
+                    Grid.Row="1"/>
+                <Button
+                    Clicked="BtnEXT_Clicked"
+                    Text="EXT"
+                    Margin="10"
+                    BackgroundColor="#ee44ff"
+                    HorizontalOptions="StartAndExpand"
+                    Grid.Column="2"
+                    Grid.Row="1"/>
+            </Grid>
+            <Button
+                BackgroundColor="#00ff00"
+                Margin="30"
+                Clicked="BtnFindAng_Clicked"
+                VerticalOptions="StartAndExpand"
+                Text="Find Angles"/>
+            <Button
+                BackgroundColor="#eecc00"
+                Margin="30"
+                Clicked="BtnReset_Clicked"
+                VerticalOptions="StartAndExpand"
+                Text="Reset"/>
+            <Label
+                Padding="5"
+                Margin="30"
+                x:Name="lblResult"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="StartAndExpand"
+                FontSize="Title"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

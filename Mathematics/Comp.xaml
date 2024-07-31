@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             Title="Computer Science Number Conversions"
+             x:Class="Mathematics.Comp">
+    <ContentPage.Content>
+        <StackLayout>
+            <Button
+                Margin="10"
+                Clicked="BtnHome_Clicked"
+                VerticalOptions="StartAndExpand"
+                Text="Return to Menu"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100" />
+                    <ColumnDefinition Width="100" />
+                    <ColumnDefinition Width="100" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="120" />
+                    <RowDefinition Height="75" />
+                    <RowDefinition Height="75" />
+                </Grid.RowDefinitions>
+                <Label 
+                    FontSize="small"
+                    VerticalOptions="CenterAndExpand"
+                    Margin ="10"
+                    Text="Enter number in correct format for number system:" 
+                    Grid.Column="0"
+                    Grid.Row="0"/>
+                <Entry
+                    VerticalOptions="CenterAndExpand"
+                    x:Name="txtNumToConvert"
+                    Keyboard="Numeric"
+                    MaxLength="15"
+                    Grid.Column="1"
+                    Grid.Row="0"/>
+                <Label 
+                    x:Name="txtMethod"
+                    Text=""
+                    FontSize="Large"
+                    VerticalOptions="CenterAndExpand"
+                    Margin ="10" 
+                    Grid.Column="2"
+                    Grid.Row="0"/>
+                <Button
+                    Clicked="BtnDecToBin_Clicked"
+                    Text="DEC-TO-BIN"
+                    Margin="10"
+                    BackgroundColor="#66aabb"
+                    HorizontalOptions="StartAndExpand"
+                    Grid.Column="0"
+                    Grid.Row="1"/>
+                <Button
+                    Clicked="BtnBinToDec_Clicked"
+                    Text="BIN-TO-DEC"
+                    Margin="10"
+                    BackgroundColor="#ee44ff"
+                    HorizontalOptions="StartAndExpand"
+                    Grid.Column="1"
+                    Grid.Row="1"/>
+                <Button
+                    Clicked="BtnBinToHex_Clicked"
+                    Text="BIN-TO-HEX"
+                    Margin="10"
+                    BackgroundColor="#aaaaff"
+                    HorizontalOptions="StartAndExpand"
+                    Grid.Column="2"
+                    Grid.Row="1"/>
+                <Button
+                    Clicked="BtnHexToBin_Clicked"
+                    Text="HEX-TO-BIN"
+                    Margin="10"
+                    BackgroundColor="#4433bb"
+                    HorizontalOptions="StartAndExpand"
+                    Grid.Column="0"
+                    Grid.Row="2"/>
+                <Button
+                    Clicked="BtnHexToDec_Clicked"
+                    Text="HEX-TO-DEC"
+                    Margin="10"
+                    BackgroundColor="#aa8899"
+                    HorizontalOptions="StartAndExpand"
+                    Grid.Column="1"
+                    Grid.Row="2"/>
+                <Button
+                    Clicked="BtnDecToHex_Clicked"
+                    Text="DEC-TO-HEX"
+                    Margin="10"
+                    BackgroundColor="#ccbbff"
+                    HorizontalOptions="StartAndExpand"
+                    Grid.Column="2"
+                    Grid.Row="2"/>
+            </Grid>
+            <Button
+                BackgroundColor="#00ff00"
+                Margin="10"
+                Clicked="BtnConvert_Clicked"
+                VerticalOptions="StartAndExpand"
+                Text="Perform Conversion"/>
+            <Button
+                BackgroundColor="#eecc00"
+                Margin="10"
+                Clicked="BtnReset_Clicked"
+                VerticalOptions="StartAndExpand"
+                Text="Reset"/>
+            <Label
+                Text="hello"
+                Padding="5"
+                Margin="30"
+                x:Name="lblResult"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="StartAndExpand"
+                FontSize="Title"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             Title="Dot product and angle finding"
+             x:Class="Mathematics.VectorAngle">
+    <ContentPage.Content>
+        <StackLayout>
+            <Button
+                Margin="10"
+                Clicked="BtnHome_Clicked"
+                VerticalOptions="StartAndExpand"
+                Text="Return to Menu"/>
+            <Label 
+                Margin="10"
+                Text="Enter the vectors in the format of x,y,z and make sure both have the same number of values"
+                FontSize="Large"
+                VerticalOptions="StartAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100" />
+                    <ColumnDefinition Width="200" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="65" />
+                    <RowDefinition Height="65" />
+                </Grid.RowDefinitions>
+                <Label
+                    Margin="5"
+                Grid.Column="0"
+                Grid.Row="0"
+                Text="First Vector"
+                FontSize="Large"
+                VerticalOptions="StartAndExpand" />
+                <Entry
+                    x:Name="txtVector1"
+                    Margin="5"
+                Grid.Column="1"
+                Grid.Row="0"
+                VerticalOptions="StartAndExpand" />
+                <Label
+                    Margin="5"
+                Grid.Column="0"
+                Grid.Row="1"
+                Text="Second Vector"
+                FontSize="Large"
+                VerticalOptions="StartAndExpand" />
+                <Entry
+                    x:Name="txtVector2"
+                    Margin="5"
+                Grid.Column="1"
+                Grid.Row="1"
+                VerticalOptions="StartAndExpand" />
+            </Grid>
+            <Button
+            VerticalOptions="StartAndExpand"
+            Margin="5"
+            BackgroundColor="#ff4400"
+            Text ="Calculate the angle"
+            Clicked="BtnFindVectorAngle_Clicked"/>
+            <Button
+            VerticalOptions="StartAndExpand"
+            Margin="5"
+            BackgroundColor="#dd6600"
+            Text ="Calculate the dot product"
+            Clicked="BtnDotProduct_Clicked"/>
+            <Button
+                BackgroundColor="#eecc00"
+                Margin="5"
+                Clicked="BtnReset_Clicked"
+                VerticalOptions="StartAndExpand"
+                Text="Reset"/>
+            <Label
+                Padding="5"
+                Margin="20"
+                x:Name="lblResult"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="StartAndExpand"
+                FontSize="Title"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

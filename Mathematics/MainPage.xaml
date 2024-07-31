@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             Title="Quick Maths Tool"
+             x:Class="Mathematics.MainPage">
+    <StackLayout>
+        <Label Text="Quick Maths Tool" 
+           HorizontalOptions="Center"
+           FontSize="Large"
+           Margin="10"
+           VerticalOptions="StartAndExpand" />
+        <Button
+            VerticalOptions="StartAndExpand"
+            Margin="0"
+            BackgroundColor="#888888"
+            Text ="Load Memory"
+            Clicked="BtnLoadMem_Clicked"/>
+        <Button
+            VerticalOptions="StartAndExpand"
+            Margin="0"
+            BackgroundColor="#888888"
+            Text ="Create a quiz"
+            Clicked="BtnLoadQuizSettings_Clicked"/>
+        <Button
+            VerticalOptions="StartAndExpand"
+            Margin="5"
+            BackgroundColor="#ee5555"
+            Text ="Fibonacci Sequence"
+            Clicked="BtnLoadFib_Clicked"/>
+        <Button
+            VerticalOptions="StartAndExpand"
+            Margin="5"
+            BackgroundColor="#5555ee"
+            Text ="Quadratic Equation"
+            Clicked="BtnLoadQuad_Clicked"/>
+        <Button
+            VerticalOptions="StartAndExpand"
+            Margin="5"
+            BackgroundColor="#ffdf00"
+            Text ="Angles of regular polygons"
+            Clicked="BtnLoadAng_Clicked"/>
+        <Button
+            VerticalOptions="StartAndExpand"
+            Margin="5"
+            BackgroundColor="#55ff55"
+            Text ="Factors of a number"
+            Clicked="BtnLoadFact_Clicked"/>
+        <Button
+            VerticalOptions="StartAndExpand"
+            Margin="5"
+            BackgroundColor="#ffdf00"
+            Text ="Computer Science Functions"
+            Clicked="BtnLoadCompMenu_Clicked"/>
+        <Button
+            VerticalOptions="StartAndExpand"
+            Margin="5"
+            BackgroundColor="#5555ff"
+            Text ="Binomial Theorem"
+            Clicked="BtnLoadPascal_Clicked"/>
+        <Button
+            VerticalOptions="StartAndExpand"
+            Margin="5"
+            BackgroundColor="#ff5555"
+            Text ="Differentiation"
+            Clicked="BtnLoadDiff_Clicked"/>
+    </StackLayout>
+
+</ContentPage>

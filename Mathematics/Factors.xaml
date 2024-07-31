@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             Title="Find a Number's Factors"
+             x:Class="Mathematics.Factors">
+    <ContentPage.Content>
+        <StackLayout>
+            <Button
+                Margin="30"
+                Clicked="BtnHome_Clicked"
+                VerticalOptions="StartAndExpand"
+                Text="Return to Menu"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="100"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="100" />
+                </Grid.RowDefinitions>
+                <Label 
+                    FontSize="Large"
+                    VerticalOptions="CenterAndExpand"
+                    Margin ="10"
+                    Text="Number to factorise:" 
+                    Grid.Column="0"
+                    Grid.Row="0"/>
+                <Entry
+                    VerticalOptions="CenterAndExpand"
+                    x:Name="txtNum"
+                    Keyboard="Numeric"
+                    MaxLength="15"
+                    Grid.Column="1"
+                    Grid.Row="0"/>
+            </Grid>
+            <Button
+                BackgroundColor="#00ff00"
+                Margin="30"
+                Clicked="BtnFindFact_Clicked"
+                VerticalOptions="StartAndExpand"
+                Text="Find Factors"/>
+            <Button
+                BackgroundColor="#eecc00"
+                Margin="30"
+                Clicked="BtnReset_Clicked"
+                VerticalOptions="StartAndExpand"
+                Text="Reset"/>
+            <ListView x:Name="lvFactors">
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
